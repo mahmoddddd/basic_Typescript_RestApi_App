@@ -11,5 +11,6 @@ router.post("/todo", (req, res, next) => {
         id: new Date().toISOString(),
         text: req.body.text,
     };
+    todos.push(newTodo);
 });
 exports.default = router;
